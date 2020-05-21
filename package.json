@@ -7,10 +7,10 @@
     "start": "node server.js",
     "server": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "client-install": "npm install --prefix client",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run\tclient\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "front-end-install": "npm install --prefix front-end",
+    "front-end": "npm start --prefix front-end",
+    "dev": "concurrently \"npm run server\" \"npm run\tfront-end\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix front-end && npm run build --prefix front-end"
   },
   "author": "",
   "license": "ISC",
